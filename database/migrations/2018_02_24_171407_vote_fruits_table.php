@@ -14,13 +14,44 @@ class VoteFruitsTable extends Migration
     public function up()
     {
         Schema::create('fruits', function (Blueprint $table) {
-            $table->integer('Fruitid');
+
             $table->string('Fruitname')->default(0);
             $table->integer('NumofVotes')->default(0);
             $table->integer('userid');
             $table->timestamps();
 
         });
+
+        DB::table('fruits')->insert([
+        [
+
+            'Fruitname' => 'Apple',
+            'NumofVotes' => '0',
+            'userid' => '0'
+        ],
+
+        [
+
+            'Fruitname' => 'Orange',
+            'NumofVotes' => '0',
+            'userid' => '0'
+        ],
+
+        [
+
+            'Fruitname' => 'Banana',
+            'NumofVotes' => '0',
+            'userid' => '0'
+        ],
+
+        [
+            
+            'Fruitname' => 'Pineapple',
+            'NumofVotes' => '0',
+            'userid' => '0'
+        ]
+
+    ]);
     }
 
     /**
