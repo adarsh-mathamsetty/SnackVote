@@ -44,14 +44,16 @@ FILES:
 •	Database tables are in the directory /database/migrations.
 
 How to RUN:
-1)	After creating the project in the directory /APPLICATIONS/XAMPP/htdocs, replace the folders in the folder named required with the same named folder that gets created while creating the project.  Please look at the paths above for convenience.  
-2)	Alternative, as mentioned in the beginning, once laravel is installed you can copy paste the FoodLove folder in the directory /htdocs and continue.
-1)	Open the project in the editor to skim through the code. Codes written are the php files in the views, php files in the controllers, models app.js, fruits.php and user.php and database table creation files in migrations folder.
-2)	Open the terminal, go to directory /APPLICATIONS/XAMPP/htdocs/FoodLove and type the following commands: 
+1)	After creating the project in the directory /APPLICATIONS/XAMPP/htdocs, replace the folders in the folder named “RequiredFiles and mycodes” with the same named folder that gets created while creating the project.  Please look at the paths above for convenience.  
+2)	Alternative ->as mentioned in the beginning, once laravel is installed you can copy paste the FoodLove folder in the directory /htdocs and continue.
+3)	You have to create a database VoteSnack(with this name) in mysql or else you cannot populate data. Also you need to create users by registering. If you want a database with different name just create it and change the DB_database value to yourdb_name, DB_USERNAME to root and leave DB_PASSWORD blank.
+4)	Open the project in the editor to skim through the code. Codes written are the php files in the views, php files in the controllers, models app.js, fruits.php and user.php and database table creation files in migrations folder.
+5)	Open the terminal, go to directory /APPLICATIONS/XAMPP/htdocs/FoodLove and type the following commands: 
 a)	Php artisan migrate -> Creates required tables in the database.
 b)	 Php artisan serve -> This will start Laravel development server at http://127.0.0.1:8000
-3)	Now you can access the app in localhost:8000. Happy Voting!
+6)	Now you can access the app in localhost:8000. Happy Voting!
 **Note: You have to install XAMPP, Laravel on your system and the files should be in htdocs for it to work.
+
 
 
 MVC Flow:  
