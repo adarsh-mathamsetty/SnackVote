@@ -18,7 +18,7 @@ use Carbon\Carbon ;
 class fruitscontroller extends Controller
 {
   private $i =1;
-  private $id=5;
+
 
 
     /**
@@ -66,7 +66,7 @@ class fruitscontroller extends Controller
         foreach ($fdata as $fdata) {
           if($fdata->Fruitname == Input::get("name") )
              {
-               $newfruit->Fruitid =$this->id;
+
                $newfruit->Fruitname = Input::get("name");
                $newfruit->NumofVotes = $this->i;
                $newfruit['userid'] = \Auth::user()->id;
